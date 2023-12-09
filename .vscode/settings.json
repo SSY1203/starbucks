@@ -1,0 +1,13 @@
+{
+  "editor.tokenColorCustomizations": {
+    "comments": "#ffd84d",
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  }
+}
