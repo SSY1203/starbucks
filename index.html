@@ -35,6 +35,7 @@
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="/css/main.css" />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
       integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
@@ -47,6 +48,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -413,6 +419,47 @@
         </div>
         <div class="fade-in">
           <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+        </div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <div class="notice-line">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+        <div class="inner">
+          <div class="inner__left">
+            <h2>공지사항</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">[당첨자 발표] 2023 스타벅스 플래너 영수증 이벤트</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="notice-line__more">
+              <div class="material-icons">add_circle</div>
+            </a>
+          </div>
+          <div class="inner__right">
+            <h2>스타벅스 프로모션</h2>
+            <div class="toggle-promotion">
+              <div class="material-icons">upload</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
