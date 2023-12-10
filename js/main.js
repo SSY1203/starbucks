@@ -85,3 +85,21 @@ promotionToggleBtn.addEventListener('click', () => {
     promotionElement.classList.remove('hide');
   }
 });
+
+const random = (min, max) => {
+  return parseFloat(Math.random() * (max - min) + min);
+};
+
+const floatingObject = (selector, delay, size) => {
+  gsap.to(selector, random(1.5, 2.5), {
+    y: size,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut,
+    delay: random(0, delay),
+  });
+};
+
+floatingObject('.floating', 1, 15);
+floatingObject('.floating', 0.5, 15);
+floatingObject('.floating', 1.5, 20);
